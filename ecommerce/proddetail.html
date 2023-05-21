@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Roboto:wght@100;300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="prod.html">Product</a></li>
+                    <li><a href="proddetail.html">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="cart.png" class="cart" width="30px" height="30px"></a>
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    <!---Single prod details-->
+    <div class="small-container single-prod">
+        <div class="row">
+            <div class="col2">
+                <img src="gallery-1.jpg" width="93%"  id="prodimg">
+
+                <!--Small img-->
+                <div class="small-img">
+                    <div class="small-img-row">
+                    <div class="small-img-col">
+                        <a href="proddetail.html"><img src="gallery-1.jpg" width="75%" class="small-img"></a>
+                    </div>
+                    <div class="small-img-col">
+                        <img src="gallery-2.jpg" width="75%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="gallery-3.jpg" width="75%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="gallery-4.jpg" width="75%" class="small-img">
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col2">
+                <h1>T-Shirt</h1>
+                <h3>Color:Red</h3>
+                <h4>Price:$50.00</h4>
+                <select>
+                    <option>select size</option>
+                    <option>XL</option>
+                    <option>L</option>
+                    <option>M</option>
+                    <option>S</option>
+                </select>
+                <input type="number" value="7">
+                <a href="" class="btn">Add To cart</a>
+                <h3>Products Details</h3>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem voluptas quo nemo labore
+                    deleniti suscipit praesentium.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+<div class="small-container">
+    <br><br>
+  <div class="rowrow2">
+    <h2>Related products</h2>
+    <br>
+    <br>
+  </div> 
+    
+
+</div>
+<!--Products-->
+<div class="small-container">
+
+    <div class="row">
+        <div class="col4">
+             <img src="product-1.jpg">
+            <h4>Red printed T-shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i> <!--Icon of star-->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col4">
+            <img src="product-2.jpg">
+            <h4>Red printed T-shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i> <!--Icon of star-->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col4">
+            <img src="product-3.jpg">
+            <h4>Red printed T-shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i> <!--Icon of star-->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col4">
+            <img src="product-4.jpg">
+            <h4>Red printed T-shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i> <!--Icon of star-->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+    </div>
+</div>
+
+
+</div>
+</div>
+
+
+<!--Footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download app for ios and andriod mob</p>
+                <div class="applogo">
+                    <img src="play-store.png">
+                    <img src="app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="logo-white.png">
+                <p>Download app for ios and andriod mob</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>UseFul Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy </li>
+                    <li>Join Affliate</li>
+                </ul>
+
+            </div>
+            <div class="footer-col-4">
+                <h3>Folllow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter </li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023- Rituraj</p>
+    </div>
+</div>
+
+<!--Js for toggle menu-->
+<script>
+    var menuitems = document.getElementById("menuitems");
+    menuitems.style.maxHeight = "0px";
+
+    function menutoggle() {
+        if (menuitems.style.maxHeight == "0px")
+            menuitems.style.maxHeight = "300px";
+        else
+            menuitems.style.maxHeight = "0px";
+    }
+</script>
+ 
+
+<script>
+var prodimg= document.getElementById("prodimg");
+var smallimg= document.getElementsByClassName("small-img");
+
+smallimg[1].onclick=function()
+{
+    prodimg.src=smallimg[1].src;
+}
+smallimg[2].onclick=function()
+{
+    prodimg.src=smallimg[2].src;
+}
+smallimg[3].onclick=function()
+{
+    prodimg.src=smallimg[3].src;
+}
+smallimg[4].onclick=function()
+{
+    prodimg.src=smallimg[4].src;
+}
+</script>
+
+</body>
+
+</html>

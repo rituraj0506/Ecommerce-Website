@@ -1,0 +1,548 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+font-family: 'Jost', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+.logo{
+    width:"125px";
+}
+
+ .navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+ nav{
+    text-align: right;
+    flex: 1;
+
+}
+.cart{
+    margin-top: 53px;
+    margin-left: 20px;
+}
+
+nav ul li {
+    display: inline-block; /*horizontally align*/
+    list-style: none;/*bullet point remove*/
+    font-size: 18px;
+    padding: 20px;
+}
+
+a{
+    text-decoration: none; /*underline remove*/
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+.row{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col2{
+    flex-basis: 50%;/*both col occupy 50% space*/
+    min-width: 300px;
+}
+
+.col2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn{
+    border-radius: 30px;
+    color:#fff;
+    background: #ff523b;
+    padding: 8px 30px;
+    margin: 30px 0px;
+    display: inline-block;
+    transition:background-0.5s;
+}
+.btn:hover{
+background: #ba2020;
+}
+
+.header{
+    background: radial-gradient(#fff,#ffd6d6);
+}
+
+.categories
+{
+margin: 70px 0px;
+}
+
+.col3{ /*we name all col3 becoz at one time use flex basis and it will take 30% individually*/
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col3 img{
+    width:100%;
+}
+
+.small-container/* uses in mid all image padding both side 65px*/
+{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 65px;
+    padding-right: 65px;
+
+}
+
+.col4{
+    flex-basis: 15%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+
+.col4 img{
+     width: 100%;
+}
+
+.tittle{ /*featured product text in center*/
+    text-align: center;
+    margin: 60px 100px;
+    position: relative;
+    line-height: 60px;
+    color:#555;
+    font-weight:bold;
+}
+
+
+.tittle::after{ /*featured product line */
+content:'';
+background: #ff523b;
+width:80px;
+height: 5px;
+border-radius: 5px;
+position: absolute;
+bottom: 10px;
+left: 50%;
+transform:translateX(-50%);/*center from x axis*/
+}
+
+.rating .fa{ /*change color of icon star*/
+ color:#ff5a3b;
+}
+
+.col4{
+    transition:transform 0.5s;
+}
+
+.col4:hover{ /*hover effect on featured product*/
+    transform: translateY(-5px);/*8move 5 px by Y axis*/
+}
+
+
+/*offer section*/
+.offer{
+    background: radial-gradient(#fff,#ffd6d6);
+    padding: 30px 0px;
+    margin-top:80px;
+}
+
+.col2 .offer-img{
+    width: 70%;
+}
+
+small{
+color:#555;
+}
+
+
+/*testimonial section*/
+.testimonial
+{
+    padding-top: 100px;
+   
+}
+
+.testimonial .col3{
+    text-align: center;
+    padding: 75px 15px;
+    box-shadow:0 0 20px 0px rgba(0,0,0,0.1); /*all are in indivisual box*/
+    cursor: pointer;
+    transition:transform 0.5s;
+    background: rgb(79, 47, 55);
+}
+    
+.testimonial .col3 img{
+    margin-top: 20px;
+    width: 70px;
+    height: 50%;
+    border-radius: 50%;
+}
+.testimonial .col3:hover{
+    transform: translateY(-10px);
+}
+
+.fa .fa-quote-left{
+font-size: 34px;
+color:#ff523b;
+}
+
+.col3 p{
+    font-size: 16px;
+    margin: 12px 0px;
+    color:#777;
+}
+
+.testimonial.col3 h3{
+    font-size: 16px;
+    font-weight: 600;
+    color:antiquewhite;
+}
+
+
+.brands{
+    margin: 100px auto;
+}
+
+.col5{
+    width: 160px;
+}
+
+.col5 img{
+    width:100%;
+    cursor: pointer;
+    filter: grayscale(100%);/*all logo color are gray*/
+}
+
+.col5 img:hover{
+    filter: grayscale(0%);/*all logo color are gray*/
+}
+
+
+/*footer Section*/
+
+.footer{
+    background: #000;
+    color:#8a8a8a;
+    font-size: 14px;
+    padding: 60px 0px 20px;
+}
+
+.footer p{
+    color:#8a8a8a; 
+}
+
+.footer h3{
+    color:#fff;
+    margin-bottom:20px;
+
+}
+
+.footer-col-1,.footer-col-2,.footer-col-3{
+min-width: 250px;
+margin-bottom: 20px;
+}
+
+.footer-col1{
+    flex-basis: 30%;
+}
+
+.footer-col2{
+
+    flex: 1;/*it will use all avaliable space*/
+    text-align: center;
+}
+
+.footer-col2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-col3,.footer-col4{
+ flex-basis: 12%;
+ text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.applogo{
+    margin-top: 20px;
+}
+
+.applogo img{
+    width: 130px;
+}
+
+footer hr{
+    border:none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.menu-icon{
+    width: 27px;
+    margin-left: 20px;
+    display: none; /* menu icon is hidden for large screen*/
+}
+
+
+/* all prod page*/
+.row2{
+    justify-content: space-between;
+    margin: 10px auto 50px;
+}
+select{
+    padding: 5px;
+}
+
+
+/*product details page*/
+.single-prod{
+    margin-top: 80px;
+}
+
+.single-prod .col2 img{
+    padding:0px;
+}
+
+single-prod .col2{
+    padding:20px;
+}
+.single-prod h4{
+margin: 20px 0px;
+font-size: 22px;
+font-weight: bold;
+}
+
+.single-prod select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.single-prod input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border:1px solid #ff523b;
+}
+
+
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+flex-basis: 24%;
+cursor: pointer;
+}
+
+
+/*Cart item Details*/
+.cart-page{
+margin: 80px auto;
+}
+
+table{
+    width: 100%;
+    border-collapse:collapse ;/*border has not break with other section*/
+}
+
+
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th{  /*design table head*/
+    text-align: left;
+    padding: 5px;
+    color:#fff;
+    background: #ff523b;
+    font-weight: normal;
+}
+
+td{
+    padding: 10px 5px;
+}
+
+td input{
+    width:40px;
+    height: 40px;
+    padding: 5px;
+
+}
+
+td a{
+    color:#ff523b;
+    font-size: 12px;
+
+}
+
+td img{
+    width:80px;
+    height:80px;
+    margin-right: 10px;
+}
+
+
+.totalprice{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.totalprice table{
+    border-top: 3px solid #ff523b;
+    width:100%;
+    max-width: 420px;
+}
+
+td :last-child
+{
+text-align: right;
+}
+
+
+/*Account page*/
+.account-page{
+    padding:50px 0px;
+    background: radial-gradient(#fff,#ffd6d6);
+}
+
+
+.form-container
+{
+    background: #fff;
+    width:350px;
+    height:340px;
+    position:relative;
+    text-align: center;
+    padding: 20px 0px;
+    margin: auto;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+    overflow: hidden;/*hidden overflow of form*/
+}
+
+.form-container span{
+font-weight: bold;
+padding: 0 10px;
+color:#555;
+cursor:pointer;
+width:100px;
+display: inline-block;
+}
+
+.form-btn{
+display: inline-block;
+}
+
+.form-container form{
+max-width: 300px;
+padding: 0 20px;
+position: absolute;
+top:130px;
+transition:transform 1s;
+}
+
+
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0px;
+    padding: 0px 10px;
+    border:1px solid #ccc;
+}
+
+form .btn{
+width: 100%;
+cursor: pointer;
+border: none;
+margin: 10px 0px;
+}
+
+form .btn :focus
+{
+    outline: none;
+}
+
+#loginform{
+    left:-350px;
+}
+
+#regform{
+    left:0;
+}
+
+#indicator{
+    width:100px;
+    border:none;
+    background: #ff523b;
+    height: 2px;
+    margin-top: 6px;
+    transform: translateX(140px);
+}
+
+/*media query for small screen*/
+
+@media only screen and (max-width:800px)
+{
+    nav ul{
+        position:absolute;
+        top:70px;
+        left:0px;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    .cart{
+        margin-top:2px;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color:#fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .row{
+        text-align: center;
+    }
+    .col2,.col3,.col4{
+        flex-basis: 100%;
+    }
+}
